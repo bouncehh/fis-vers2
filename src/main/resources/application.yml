@@ -1,0 +1,16 @@
+camel:
+  springboot:
+    name: HelloAMQ
+  component:
+    servlet:
+      mapping:
+        enabled: true
+        context-path: /hello-amq/*
+
+management:
+  port: 8080
+
+endpoints:
+  enabled: false
+  health:
+    enabled: true
