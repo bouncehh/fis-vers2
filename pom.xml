@@ -5,7 +5,7 @@
 
   <groupId>com.redhat.openshift.fuse</groupId>
   <artifactId>hello-amq</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <name>Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL</name>
   <description>Spring Boot example running a Camel REST route connecting to a SQL database</description>
