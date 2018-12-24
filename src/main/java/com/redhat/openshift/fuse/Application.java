@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 @SpringBootApplication
-@ImportResource("classpath:amq.xml")
+//@ImportResource("classpath:amq.xml")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -26,10 +26,10 @@ public class Application {
                 .bindingMode(RestBindingMode.json);
 
             rest()
-                .post("/send").to("direct:sendMessage")
+                //.post("/send").to("direct:sendMessage")
                 .get("/hello").to("direct:hello");
 
-            from("direct:sendMessage").log("sendMessage").to("amq://hello");
+            //from("direct:sendMessage").log("sendMessage").to("amq://hello");
 
             from("direct:hello").setBody(constant("Hello AMQ!"));
 
