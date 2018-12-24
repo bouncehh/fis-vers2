@@ -31,7 +31,7 @@ public class Application {
 
             //from("direct:sendMessage").log("sendMessage").to("amq://hello");
 
-            from("direct:hello").setBody(constant("Hello AMQ!"));
+            from("direct:hello").setBody(constant("Hello AMQ! (DEV)"));
 
             //from("amq://hello").log(body().toString());
         }
