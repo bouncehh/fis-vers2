@@ -33,7 +33,7 @@ public class Application {
 
             from("direct:hello").setBody(constant("Hello AMQ!"));
 
-            from("amq://hello").log(body().toString());
+            //from("amq://hello").log(body().toString());
         }
     }
 
